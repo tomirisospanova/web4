@@ -32,32 +32,6 @@ This is a web application built with Express.js, MongoDB, and EJS for rendering 
 ```bash
 git clone https://github.com/tomirisospanova/web4.git
 
-
-## Usage
-
-1. **Navigate to the project directory:**
-
-```bash
-cd weather/back
-
-2. **Install dependencies:**
-
-```bash
-npm install express mongoose body-parser express-session express-basic-auth ejs bcryptjs
-
-3. **Start the application:**
-
-```bash
-npm start
-
-## Installation
-
-/api/user: CRUD operations for user data
-/meal: Routes related to meals
-/history: Routes related to history
-/profile: View user profile
-/admin: Admin panel to manage users
-/login: User login page
-/register: User registration page
-/weather: Weather data retrieval routes
-
+1.Navigate to the project directory: cd web4/weather/back
+2.Install dependencies: npm install express mongoose body-parser express-session express-basic-auth ejs bcryptjs
+3.Start the application: npm start
