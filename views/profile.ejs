@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/headers.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <style>
+      body {
+          background-color: #f3e5f5; /* Light purple background */
+      }
+      .text-purple {
+          color: #6a1b9a; /* Dark purple text */
+      }
+      .text-pink {
+          color: #ec407a; /* Pink text */
+      }
+      .bg-purple {
+          background-color: #9c27b0; /* Purple background */
+      }
+      .bg-pink {
+          background-color: #f48fb1; /* Light pink background */
+      }
+      .btn-purple {
+          background-color: #6a1b9a; /* Dark purple button */
+          border-color: #6a1b9a; /* Dark purple border */
+      }
+      .btn-purple:hover {
+          background-color: #4a148c; /* Darker purple on hover */
+          border-color: #4a148c; /* Darker purple border on hover */
+      }
+      .btn-pink {
+          background-color: #ec407a; /* Pink button */
+          border-color: #ec407a; /* Pink border */
+      }
+      .btn-pink:hover {
+          background-color: #d81b60; /* Darker pink on hover */
+          border-color: #d81b60; /* Darker pink border on hover */
+      }
+  </style>
+</head>
+<body>
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="/" class="nav-link px-2 text-secondary">Home</a></li>
+              <li><a href="/profile" class="nav-link px-2 text-white">Profile</a></li>
+              <li><a href="/about" class="nav-link px-2 text-white">About</a></li>
+              <li><a href="/admin" class="nav-link px-2 text-white">Admin page</a></li>
+              <li><a href="/meal" class="nav-link px-2 text-white">Recipe</a></li>
+              <li><a href="/history" class="nav-link px-2 text-white">Api history</a></li>
+            </ul>
+    
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+              <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+            </form>
+    
+            <div class="text-end">
+              <a href="/login"><button type="button" class="btn btn-outline-light me-2">Login</button></a>
+              <a href="/register"><button type="button" class="btn btn-warning">Sign-up</button></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6 offset-md-3">
+            <h1 class="text-center" style="color: #9c27b0;">Profile Page</h1> <!-- Purple heading -->
+            <hr>
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title" style="color: #9c27b0;">Username: <span id="username" style="color: #6a1b9a;">Name is: <%= user ? user.name : 'N/A' %></span></h4> <!-- Purple and pink text -->
+                <h6 class="card-subtitle mb-2 text-muted">Email: <span id="email">Email is: <%= user ? user.email : 'N/A' %></span></h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="mt-5 text-center" style="background-color: #6c757d; color: #ffffff;"> <!-- Dark purple footer -->
+        <p>Ospanova Tomiris | SE-2202</p>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
